@@ -1,0 +1,6 @@
+.card{
+    transition: all .2s linear;
+}
+.card:hover{
+    transform: translate(-5px,-10px);
+}
