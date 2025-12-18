@@ -4,3 +4,107 @@
 .card:hover{
     transform: translate(-5px,-10px);
 }
+
+
+
+.movie-carousel {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+/* Hide scrollbar */
+.movie-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-card {
+  min-width: 150px;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+/* Ensure the card is the positioning context for the overlay */
+.movie-card{
+  position: relative;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Hover overlay (hidden by default) */
+.hover-info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 220px; /* match .movie-card img height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(56, 52, 52, 0.637);
+  color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+  pointer-events: none;
+  /* z-index: 5; */
+}
+
+.movie-card:hover .hover-info{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.trailer-btn{
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  /* backdrop-filter: blur(4px); */
+}
+
+.info-text p{ margin: 0; }
+
+.movie-card p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  background: white;
+  border: none;
+  font-size: 22px;
+  padding: 6px 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.left { left: -15px; }
+.right { right: -15px; }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .scroll-btn {
+    display: none; /* swipe only */
+  }
+}
+
+
+.movie-card{ transition: all .2s linear; }
+.movie-card:hover img { transform: scale(1.12); }

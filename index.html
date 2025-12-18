@@ -13,11 +13,13 @@
 
     <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: aqua;">
-        <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-between">
             <p class="navbar-nav fw-bold fs-4">Navbar</p>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,9 +32,424 @@
                     <a class="nav-link fw-bold" href="contact.html">Contact Us</a>
                 </div>
             </div>
+            <div class="" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <p class="nav-link mt-2"><a href="" class="fw-bold link-dark text-decoration-none">signup</a> / <a href="" class="fw-bold link-dark text-decoration-none">login</a></p>
+                </div>
+            </div>
         </div>
     </nav>
     <!-- navbar end -->
+
+    <!-- Top OTT platforms start-->
+     <h3 class="fw-bold text-center p-3">Top OTT Platforms</h3>
+     <div class="container d-flex justify-content-between p-5 mb-5 shadow rounded-4" >
+      <a href="https://www.netflix.com/in/" target="_blank"><img src="assets/Netflix.jpg" alt="" class="rounded-3" style="width: 200px; height: 200px;"></a>
+      <a href="https://www.primevideo.com/" target="_blank"><img src="assets/prime-video.avif" alt="" class="rounded-3" style="width: 200px; height: 200px;"></a>
+      <a href="https://www.hotstar.com/in/" target="_blank"><img src="assets/disney.webp" alt="" class="rounded-3" style="width: 200px; height: 200px;"></a>
+      <a href="https://www.hulu.com/" target="_blank"><img src="assets/hulu.jpg" alt="" class="rounded-3" style="width: 200px; height: 200px;"></a>
+      <a href="https://www.aha.video/" target="_blank"><img src="assets/aha.png" alt="" class="rounded-3" style="width: 200px; height: 200px;"></a>
+     </div>
+      <!-- Top OTT platforms end-->
+
+     <!-- top 2025 movies start -->
+    <div class="container">
+      <h3 class="mb-3">Top 2025 Movies</h3>
+    
+      <div class="position-relative">
+    
+        <!-- Scroll Buttons -->
+        <button class="scroll-btn left rounded-3" onclick="carouselScrollLeft(this)">❮</button>
+        <button class="scroll-btn right rounded-3" onclick="carouselScrollRight(this)">❯</button>
+    
+        <!-- Scroll Container -->
+        <div class="movie-carousel p-4" id="movieCarousel">
+    
+          <!-- Movie Card 1 -->
+          <div class="movie-card">
+            <img src="assets/F1_(2025_film).png" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 35m</p>
+                <p>⭐ IMDb: 7.7</p>
+                <p>📺 Apply TV</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 2 -->
+          <div class="movie-card">
+            <img src="assets/superman.jpg" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 3 -->
+          <div class="movie-card">
+            <img src="assets/mission.jpg" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 4 -->
+          <div class="movie-card">
+            <img src="assets/kotha lokha.jpg" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 5 -->
+          <div class="movie-card">
+            <img src="assets/captain.webp" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 6 -->
+          <div class="movie-card">
+            <img src="assets/coolie.jpg" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 7 -->
+          <div class="movie-card">
+            <img src="assets/Karate_Kid_Legends_Poster.jpg" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 8 -->
+          <div class="movie-card">
+            <img src="assets/nehza.jpg" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 9 -->
+          <div class="movie-card">
+            <img src="assets/KPDHposter.jpeg" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 10 -->
+          <div class="movie-card">
+            <img src="assets/thunder bolts.webp" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Add more cards -->
+        </div>
+      </div>
+    </div>
+   <!-- top 2025 movies end -->
+
+   <!-- top 2025 webseries start -->
+    <div class="container">
+      <h3 class="mb-3">Top Webseries</h3>
+    
+      <div class="position-relative">
+    
+        <!-- Scroll Buttons -->
+        <button class="scroll-btn left rounded-3" onclick="carouselScrollLeft(this)">❮</button>
+        <button class="scroll-btn right rounded-3" onclick="carouselScrollRight(this)">❯</button>
+    
+        <!-- Scroll Container -->
+        <div class="movie-carousel p-4" id="movieCarousel">
+    
+          <!-- Movie Card 1 -->
+          <div class="movie-card">
+            <img src="assets/web-1.jpg" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 35m</p>
+                <p>⭐ IMDb: 7.7</p>
+                <p>📺 Apply TV</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 2 -->
+          <div class="movie-card">
+            <img src="assets/web-2.jpg" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 3 -->
+          <div class="movie-card">
+            <img src="assets/web-3.jpg" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 4 -->
+          <div class="movie-card">
+            <img src="assets/web-4.jpg" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 5 -->
+          <div class="movie-card">
+            <img src="assets/web-5.jpg" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 6 -->
+          <div class="movie-card">
+            <img src="assets/web6.jpg" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 7 -->
+          <div class="movie-card">
+            <img src="assets/web-7.png" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 8 -->
+          <div class="movie-card">
+            <img src="assets/web-8.jpg" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 9 -->
+          <div class="movie-card">
+            <img src="assets/web9.jpg" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Movie Card 10 -->
+          <div class="movie-card">
+            <img src="assets/web10.webp" alt="">
+            <!-- Hover Overlay (appears on hover of this movie-card) -->
+            <div class="hover-info">
+              <a href="https://youtube.com/trailer-link" target="_blank" class="trailer-btn">
+                ▶ Watch Trailer
+              </a>
+    
+              <div class="info-text">
+                <p>⏱ 2h 18m</p>
+                <p>⭐ IMDb: 8.4</p>
+                <p>📺 Netflix</p>
+              </div>
+            </div>
+            <p>Kaantha</p>
+          </div>
+    
+          <!-- Add more cards -->
+        </div>
+          
+      </div>
+    </div>
+   <!-- top 2025 webseries end -->
 
     <!-- footer start -->
 <div class="container-fluid p-3 bg-dark text-white"><!--data-aos="zoom-up" data-aos-duration="1000"-->
@@ -66,21 +483,17 @@
             </div>
             <div class="row mt-3">
                 <div class=" col-3 col-sm-3 col-lg-3 col-md-3">
-                    <img src="./assets/Strawberry-Water-006.jpg" alt="" class="rounded-3  shadow" width="100%"
-                        height="70px">
+                    <a href="https://www.youtube.com/watch?v=EXeTwQWrcwY" target="_blank"><img src="./assets/1.jpg" alt="" class="rounded-3  shadow" width="100%"height="70px"></a>
 
                 </div>
                 <div class=" col-3 col-sm-3 col-lg-3 col-md-3">
-                    <img src="./assets/Strawberry-Water-006.jpg" alt="" class="rounded-3  shadow" width="100%"
-                        height="70px">
+                    <a href="https://www.youtube.com/watch?v=r5X-hFf6Bwo" target="_blank"><img src="./assets/2.jpg" alt="" class="rounded-3  shadow" width="100%"height="70px"></a>
                 </div>
                 <div class=" col-3 col-sm-3 col-lg-3 col-md-3">
-                    <img src="./assets/Strawberry-Water-006.jpg" alt="" class="rounded-3  shadow" width="100%"
-                        height="70px">
+                    <a href="https://www.youtube.com/watch?v=V75dMMIW2B4" target="_blank"><img src="./assets/3.jpg" alt="" class="rounded-3  shadow" width="100%"height="70px"></a>
                 </div>
                 <div class=" col-3 col-sm-3 col-lg-3 col-md-3">
-                    <img src="./assets/Strawberry-Water-006.jpg" alt="" class="rounded-3  shadow" width="100%"
-                        height="70px">
+                    <a href="https://www.youtube.com/watch?v=YoHD9XEInc0" target="_blank"><img src="./assets/4.webp" alt="" class="rounded-3  shadow" width="100%"height="70px"></a>
                 </div>
             </div>
 
@@ -95,5 +508,33 @@
 </div>
 <!-- footer end -->
     <script src="script.js"></script>
+    <script>
+function carouselScrollLeft(btn) {
+  // find the carousel closest to the clicked button
+  const container = btn.closest('.position-relative');
+  if (!container) return;
+  const carousel = container.querySelector('.movie-carousel');
+  if (!carousel) return;
+  const amount = Math.round(carousel.clientWidth * 0.8) || 300;
+  carousel.scrollBy({ left: -amount, behavior: 'smooth' });
+}
+
+function carouselScrollRight(btn) {
+  const container = btn.closest('.position-relative');
+  if (!container) return;
+  const carousel = container.querySelector('.movie-carousel');
+  if (!carousel) return;
+  const amount = Math.round(carousel.clientWidth * 0.8) || 300;
+  carousel.scrollBy({ left: amount, behavior: 'smooth' });
+}
+// Optional: allow keyboard arrow control when carousel is focused
+document.addEventListener('keydown', (e) => {
+  const active = document.activeElement;
+  if (active && active.classList && active.classList.contains('movie-carousel')) {
+    if (e.key === 'ArrowLeft') active.scrollBy({ left: -200, behavior: 'smooth' });
+    if (e.key === 'ArrowRight') active.scrollBy({ left: 200, behavior: 'smooth' });
+  }
+});
+</script>
 </body>
 </html>
