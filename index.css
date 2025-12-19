@@ -108,3 +108,25 @@
 
 .movie-card{ transition: all .2s linear; }
 .movie-card:hover img { transform: scale(1.12); }
+
+/* center navbar items on large screens */
+@media (min-width: 992px) {
+  .center-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Top platforms images - default and responsive adjustments */
+.platforms .platform-img {
+  max-height: 200px; /* default to match previous layout */
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 575.98px) {
+  .platforms .platform-img {
+    max-height: 100px; /* smaller images on extra-small screens */
+  }
+}

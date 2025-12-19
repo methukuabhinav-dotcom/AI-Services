@@ -16,31 +16,45 @@
 </head>
 <body>
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: aqua;">
-        <div class="container-fluid">
-            <p class="navbar-nav fw-bold fs-4">Navbar</p>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class=" " id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link fw-bold active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link fw-bold" href="aboutus.html">About US</a>
-                    <a class="nav-link fw-bold" href="contact.html">Contact Us</a>
+        <nav class="navbar navbar-expand-lg" style="background-color: aqua;">
+            <div class="container-fluid position-relative">
+                <a class="navbar-brand fw-bold" href="#">MovieAI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav center-nav text-center mb-2 mb-lg-0 fs-6">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="aboutus.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold  " href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center justify-content-center ms-lg-auto" role="search">
+                        <p class="mb-0 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#" class="fw-bold link-dark text-decoration-none">signup</a> / <a href="#" class="fw-bold link-dark text-decoration-none">login</a></p>
+                    </div>
+        
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     <!-- navbar end -->
      <h1 class="text-center fw-bold">About-Us</h1>
 
      <!-- Why We Built This start -->
+      <div class="container shadow rounded-3 p-4 mb-4">
+        <h3 class="fw-bold"><i class="bi bi-chevron-left fw-bold"></i><i class="bi bi-chevron-right fw-bold"></i> Why We Built This</h3>
+        <p class="text-secondary">In an era of endless streaming options, finding quality movies can be overwhelming. We developed this platform to cut through the noise and surface only the best content. Our algorithm considers both professional ratings and audience engagement to ensure you spend your time watching movies that are truly worth it.</p>
 
+      </div>
      <!-- Why We Built This end -->
 
-         <!-- team staart -->
-     <div class="team-list container shadow rounded-3 p-4">
+         <!-- team start -->
+     <div class="team-list container shadow rounded-3 p-4 mb-4">
         <div class="d-flex gap-3">
             <i class="bi bi-people-fill fs-4 fw-bolder"></i>
             <h3 class="fw-bold">Meet Our team</h3>
@@ -143,7 +157,7 @@
         <!-- col-3 end -->
       </div>
      </div>
-    <!-- chefs end -->
+    <!-- team end -->
 
          <!-- footer start -->
 <div class="container-fluid p-3 bg-dark text-white"><!--data-aos="zoom-up" data-aos-duration="1000"-->
@@ -202,6 +216,8 @@
 </div>
 <!-- footer end -->
 
+    <!-- bootstrap bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- JS link -->
     <script src="script.js"></script>
 </body>

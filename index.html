@@ -18,38 +18,60 @@
 </head>
 <body>
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: aqua;">
-        <div class="container-fluid d-flex justify-content-between">
-            <p class="navbar-nav fw-bold fs-4">Navbar</p>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link fw-bold active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link fw-bold" href="aboutus.html">About US</a>
-                    <a class="nav-link fw-bold" href="contact.html">Contact Us</a>
+        <nav class="navbar navbar-expand-lg" style="background-color: aqua;">
+            <div class="container-fluid position-relative">
+                <a class="navbar-brand fw-bold" href="#">MovieAI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav center-nav text-center mb-2 mb-lg-0 fs-6">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="aboutus.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold  " href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center justify-content-center ms-lg-auto" role="search">
+                        <p class="mb-0 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#" class="fw-bold link-dark text-decoration-none">signup</a> / <a href="#" class="fw-bold link-dark text-decoration-none">login</a></p>
+                    </div>
+        
                 </div>
             </div>
-            <div class="" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <p class="nav-link mt-2"><a href="" class="fw-bold link-dark text-decoration-none">signup</a> / <a href="" class="fw-bold link-dark text-decoration-none">login</a></p>
-                </div>
-            </div>
-        </div>
-    </nav>
+        </nav>
     <!-- navbar end -->
 
     <!-- Top OTT platforms start-->
      <h3 class="fw-bold text-center p-3">Top OTT Platforms</h3>
-     <div class="container d-flex justify-content-between p-5 mb-5 shadow rounded-4" >
-      <a href="https://www.netflix.com/in/" target="_blank"><img src="assets/Netflix.jpg" alt="" class="rounded-3" style="width: 200px; height: 200px;"></a>
-      <a href="https://www.primevideo.com/" target="_blank"><img src="assets/prime-video.avif" alt="" class="rounded-3" style="width: 200px; height: 200px;"></a>
-      <a href="https://www.hotstar.com/in/" target="_blank"><img src="assets/disney.webp" alt="" class="rounded-3" style="width: 200px; height: 200px;"></a>
-      <a href="https://www.hulu.com/" target="_blank"><img src="assets/hulu.jpg" alt="" class="rounded-3" style="width: 200px; height: 200px;"></a>
-      <a href="https://www.aha.video/" target="_blank"><img src="assets/aha.png" alt="" class="rounded-3" style="width: 200px; height: 200px;"></a>
-     </div>
+    <div class="container platforms p-4 p-md-5 mb-5 bg-dark shadow rounded-4">
+      <div class="row gx-4 gy-4 justify-content-center align-items-center">
+        <div class="col-6 col-md-6 col-lg-3 d-flex justify-content-center">
+          <a href="https://www.netflix.com/in/" target="_blank">
+            <img src="assets/Netflix.jpg" alt="Netflix" class="img-fluid rounded-3 platform-img">
+          </a>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3 d-flex justify-content-center">
+          <a href="https://www.primevideo.com/" target="_blank">
+            <img src="assets/prime-video.avif" alt="Prime Video" class="img-fluid rounded-3 platform-img">
+          </a>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3 d-flex justify-content-center">
+          <a href="https://www.hotstar.com/in/" target="_blank">
+            <img src="assets/disney.webp" alt="Hotstar" class="img-fluid rounded-3 platform-img">
+          </a>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3 d-flex justify-content-center">
+          <a href="https://www.hulu.com/" target="_blank">
+            <img src="assets/hulu.jpg" alt="Hulu" class="img-fluid rounded-3 platform-img">
+          </a>
+        </div>
+      </div>
+    </div>
       <!-- Top OTT platforms end-->
 
      <!-- top 2025 movies start -->
@@ -508,33 +530,5 @@
 </div>
 <!-- footer end -->
     <script src="script.js"></script>
-    <script>
-function carouselScrollLeft(btn) {
-  // find the carousel closest to the clicked button
-  const container = btn.closest('.position-relative');
-  if (!container) return;
-  const carousel = container.querySelector('.movie-carousel');
-  if (!carousel) return;
-  const amount = Math.round(carousel.clientWidth * 0.8) || 300;
-  carousel.scrollBy({ left: -amount, behavior: 'smooth' });
-}
-
-function carouselScrollRight(btn) {
-  const container = btn.closest('.position-relative');
-  if (!container) return;
-  const carousel = container.querySelector('.movie-carousel');
-  if (!carousel) return;
-  const amount = Math.round(carousel.clientWidth * 0.8) || 300;
-  carousel.scrollBy({ left: amount, behavior: 'smooth' });
-}
-// Optional: allow keyboard arrow control when carousel is focused
-document.addEventListener('keydown', (e) => {
-  const active = document.activeElement;
-  if (active && active.classList && active.classList.contains('movie-carousel')) {
-    if (e.key === 'ArrowLeft') active.scrollBy({ left: -200, behavior: 'smooth' });
-    if (e.key === 'ArrowRight') active.scrollBy({ left: 200, behavior: 'smooth' });
-  }
-});
-</script>
 </body>
 </html>
