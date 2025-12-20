@@ -1,37 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>About | AI Recommendation System</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Signup</title>
+
+  <!-- css link -->
+   <link rel="stylesheet" href="index.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
-<body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<body class="d-flex align-items-center justify-content-center min-vh-100" style="background-color: #072340;">
 
-<section>
-  <h1>About Our System</h1>
-  <p>
-    The AI-Based Recommendation System for OTT platforms is designed to enhance
-    user engagement by suggesting relevant content based on individual preferences.
-  </p>
+<div class="position-relative shadow rounded-4 overflow-hidden bg-light"
+     style="max-width:800px;width:800px;height:430px; background-color: rgba(0, 0, 0, 0.020);">
 
-  <h2>How It Works</h2>
-  <ul>
-    <li>Collects user interaction data (views, likes, ratings)</li>
-    <li>Applies Machine Learning algorithms</li>
-    <li>Uses collaborative & content-based filtering</li>
-    <li>Generates personalized recommendations</li>
-  </ul>
+  <!-- MAIN WRAPPER -->
+  <div class="d-flex h-100">
 
-  <h2>Technologies Used</h2>
-  <p>
-    HTML, CSS, JavaScript, Python, Machine Learning, AI Algorithms,
-    Data Analytics</p>
-    </section>
+    <!-- SIGNUP -->
+    <div id="signupBox" class="w-50 p-4 text-center">
+      <h2 class="text-warning mb-4">Create Account</h2>
+
+      <form>
+        <div class="input-group mb-3">
+          <span class="input-group-text"><i class="bi bi-person"></i></span>
+          <input class="form-control" placeholder="User Name">
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+          <input class="form-control" placeholder="Email">
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text"><i class="bi bi-lock"></i></span>
+          <input class="form-control" placeholder="Password">
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text"><i class="bi bi-lock"></i></span>
+          <input class="form-control" placeholder="Confirm Password">
+        </div>
+
+        <button type="button"
+                class="btn btn-warning px-4"
+                onclick="showLogin()">Sign up</button>
+        <div class="logos d-flex fs-3 justify-content-evenly mt-3">
+          <i class="bi bi-facebook face-logo"></i>
+          <i class="bi bi-google google-logo"></i>
+          <i class="bi bi-github github-logo"></i>
+        </div>
+      </form>
+    </div>
+
+    <!-- LOGIN -->
+    <div id="loginBox" class="w-50 p-4 text-center">
+      <h2 class="text-warning mb-2">login</h2>
+      <p class="text-secondary">Welcome back User!</p>
+
+      <form>
+        <div class="input-group my-3">
+          <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+          <input class="form-control" placeholder="Email">
+        </div>
+
+        <div class="input-group my-3">
+          <span class="input-group-text"><i class="bi bi-lock"></i></span>
+          <input class="form-control" placeholder="Password">
+        </div>
+
+        <button type="button"
+                class="btn btn-warning px-4"
+                onclick="showSignup()">login</button>
+        <div class="logos d-flex fs-3 justify-content-evenly mt-3">
+          <i class="bi bi-facebook face-logo"></i>
+          <i class="bi bi-google google-logo"></i>
+          <i class="bi bi-github github-logo"></i>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- BLACK OVERLAY -->
+  <div id="overlay"
+       class="position-absolute top-0 h-100 d-flex flex-column justify-content-center align-items-center text-center bg-dark text-white"
+       style="width:50%;right:0;transition:all .6s ease;">
+
+    <h3 id="overlayTitle">Hello, Friend!</h3>
+    <p id="overlayText1" class="px-4 text-secondary">
+      Enter your personal details and start journey with us!
+    </p>
+    <p id="overlayText2" class="px-4 text-secondary">
+      I already have an account.
+    </p>
+
+    <button id="overlayBtn"
+            class="btn btn-outline-light mx-3"
+            onclick="showSignup()">login</button>
+  </div>
+
+</div>
+
+<script>
+  const overlay = document.getElementById("overlay");
+  const overlayTitle = document.getElementById("overlayTitle");
+  const overlayText1 = document.getElementById("overlayText1");
+  const overlayText2 = document.getElementById("overlayText2");
+  const overlayBtn = document.getElementById("overlayBtn");
+
+  function showSignup() {
+    overlay.style.right = "50%";
+
+    overlayTitle.innerText = "Welcome back!";
+    overlayText1.innerText ="To keep connected with us please login!"
+    overlayText2.innerText ="Don't have an account?"
+    overlayBtn.innerHTML = "Sign up";
+    overlayBtn.onclick = showLogin;
+  }
+
+  function showLogin() {
+    overlay.style.right = "0";
+
+    overlayTitle.innerText = "Hello, Friend!";
+    overlayText1.innerText = "Enter your personal details and start journey with us!";
+    overlayText2.innerText = "I already have an account.";
+    overlayBtn.innerText = "login";
+    overlayBtn.onclick = showSignup;
+  }
+</script>
 
 </body>
 </html>

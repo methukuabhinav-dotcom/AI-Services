@@ -130,3 +130,21 @@
     max-height: 100px; /* smaller images on extra-small screens */
   }
 }
+
+/* login page logo hover effects */
+.face-logo:hover {
+  color: #3b5998; /* Facebook blue */
+  transform: scale(1.2);
+  transition: all .2s ease-in-out;
+}
+.google-logo:hover {
+  color: #db4437; /* Google red */
+  transform: scale(1.2);
+  transition: all .2s ease-in-out;
+}
+
+.github-logo:hover {
+  color: #333; /* GitHub black */
+  transform: scale(1.2);
+  transition: all .2s ease-in-out;
+}
