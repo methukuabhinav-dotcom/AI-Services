@@ -21,7 +21,35 @@
   <!-- MAIN WRAPPER -->
   <div class="d-flex h-100">
 
-    <!-- SIGNUP -->
+
+    <!-- LOGIN -->
+    <div id="loginBox" class="w-50 p-4 text-center">
+      <h2 class="text-warning mb-2">login</h2>
+      <p class="text-secondary">Welcome back User!</p>
+
+      <form>
+        <div class="input-group my-3">
+          <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+          <input class="form-control" placeholder="Email">
+        </div>
+
+        <div class="input-group my-3">
+          <span class="input-group-text"><i class="bi bi-lock"></i></span>
+          <input class="form-control" placeholder="Password">
+        </div>
+
+        <button type="button"
+                class="btn btn-warning px-4"
+                onclick="showSignup()">login</button>
+        <div class="logos d-flex fs-3 justify-content-evenly mt-3">
+          <i class="bi bi-facebook face-logo"></i>
+          <i class="bi bi-google google-logo"></i>
+          <i class="bi bi-github github-logo"></i>
+        </div>
+      </form>
+    </div>
+
+        <!-- SIGNUP -->
     <div id="signupBox" class="w-50 p-4 text-center">
       <h2 class="text-warning mb-4">Create Account</h2>
 
@@ -57,33 +85,6 @@
       </form>
     </div>
 
-    <!-- LOGIN -->
-    <div id="loginBox" class="w-50 p-4 text-center">
-      <h2 class="text-warning mb-2">login</h2>
-      <p class="text-secondary">Welcome back User!</p>
-
-      <form>
-        <div class="input-group my-3">
-          <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-          <input class="form-control" placeholder="Email">
-        </div>
-
-        <div class="input-group my-3">
-          <span class="input-group-text"><i class="bi bi-lock"></i></span>
-          <input class="form-control" placeholder="Password">
-        </div>
-
-        <button type="button"
-                class="btn btn-warning px-4"
-                onclick="showSignup()">login</button>
-        <div class="logos d-flex fs-3 justify-content-evenly mt-3">
-          <i class="bi bi-facebook face-logo"></i>
-          <i class="bi bi-google google-logo"></i>
-          <i class="bi bi-github github-logo"></i>
-        </div>
-      </form>
-    </div>
-
   </div>
 
   <!-- BLACK OVERLAY -->
@@ -91,17 +92,17 @@
        class="position-absolute top-0 h-100 d-flex flex-column justify-content-center align-items-center text-center bg-dark text-white"
        style="width:50%;right:0;transition:all .6s ease;">
 
-    <h3 id="overlayTitle">Hello, Friend!</h3>
+    <h3 id="overlayTitle">Welcome back!</h3>
     <p id="overlayText1" class="px-4 text-secondary">
-      Enter your personal details and start journey with us!
+      To keep connected with us please login!
     </p>
     <p id="overlayText2" class="px-4 text-secondary">
-      I already have an account.
+      Don't have an account?
     </p>
 
     <button id="overlayBtn"
             class="btn btn-outline-light mx-3"
-            onclick="showSignup()">login</button>
+            onclick="showSignup()">Sign up</button>
   </div>
 
 </div>
@@ -116,20 +117,20 @@
   function showSignup() {
     overlay.style.right = "50%";
 
-    overlayTitle.innerText = "Welcome back!";
-    overlayText1.innerText ="To keep connected with us please login!"
-    overlayText2.innerText ="Don't have an account?"
-    overlayBtn.innerHTML = "Sign up";
+    overlayTitle.innerText = "Hello, Friend!";
+    overlayText1.innerText ="Enter your personal details and start journey with us!"
+    overlayText2.innerText ="I already have an account."
+    overlayBtn.innerHTML = "login";
     overlayBtn.onclick = showLogin;
   }
 
   function showLogin() {
     overlay.style.right = "0";
 
-    overlayTitle.innerText = "Hello, Friend!";
-    overlayText1.innerText = "Enter your personal details and start journey with us!";
-    overlayText2.innerText = "I already have an account.";
-    overlayBtn.innerText = "login";
+    overlayTitle.innerText = "Welcome back!";
+    overlayText1.innerText = "To keep connected with us please login!";
+    overlayText2.innerText = "Don't have an account?";
+    overlayBtn.innerText = "Sign up";
     overlayBtn.onclick = showSignup;
   }
 </script>

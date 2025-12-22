@@ -148,3 +148,31 @@
   transform: scale(1.2);
   transition: all .2s ease-in-out;
 }
+
+/* Center profile avatar and dropdown on small/medium screens */
+@media (max-width: 991.98px) {
+  .navbar .dropdown {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px; /* keep avatar below nav links */
+    z-index: 1000; /* keep dropdown below nav links */
+  }
+  .navbar .dropdown .dropdown-menu {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    margin-top: 6px;
+  }
+}
+
+/* On large screens ensure dropdown is only as wide as needed and center nav is on top */
+@media (min-width: 992px) {
+  .navbar .dropdown {
+    width: auto !important;
+  }
+  .navbar .center-nav {
+    position: relative;
+    z-index: 1200;
+  }
+}

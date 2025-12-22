@@ -37,9 +37,53 @@
                             <a class="nav-link fw-bold  " href="contact.html">Contact</a>
                         </li>
                     </ul>
-                    <div class="d-flex align-items-center justify-content-center ms-lg-auto" role="search">
-                        <p class="mb-0 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="/demo.html" class="fw-bold link-dark text-decoration-none">signup</a> / <a href="#" class="fw-bold link-dark text-decoration-none">login</a></p>
+            <!-- PROFILE DROPDOWN -->
+            <div class="dropdown d-flex w-100 justify-content-center justify-content-lg-end align-items-center ms-lg-auto">
+                <img id="profileToggle" src="/assets/profile.jpg" role="button" tabindex="0"
+                    data-bs-toggle="dropdown" aria-expanded="false"
+                    class="rounded-circle"
+                    width="40"
+                    height="40" style="cursor:pointer;">
+
+                <div class="dropdown-menu dropdown-menu-end p-3" style="width:320px;">
+                    <div class="card-1 border-0 ">
+                        <div class="card-body text-center">
+                            <img src="/assets/profile.jpg"
+                                class="rounded-circle mb-2"
+                                width="60"
+                                height="60">
+                            <h6 class="mb-0 fw-bold">Abhinav</h6>
+                            <small class="text-muted">abhinavmethuku2003@gmail.com</small>
+                        </div>
+
+                        <ul class="list-group list-group-flush text-start">
+                            <li class="list-group-item">🔑 Passwords and autofill</li>
+                            <li class="list-group-item">🅖 Manage your Google Account</li>
+                            <li class="list-group-item">✏️ Customise profile</li>
+                            <li class="list-group-item">🔄 Sync is on</li>
+                        </ul>
+
+                        <div class="card-body">
+                            <p class="fw-bold mb-1">Other Chrome profiles</p>
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center" style="width:30px;height:30px;">A</div>
+                                <span>Abhinav</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width:30px;height:30px;">a</div>
+                                <span>abhinav (Sunny)</span>
+                            </div>
+
+                            <div class="border-top pt-2">
+                                <p class="mb-1">➕ Add Chrome profile</p>
+                                <p class="mb-1">👤 Open guest profile</p>
+                                <p class="mb-0">⚙️ Manage Chrome profiles</p>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <!-- PROFILE DROPDOWN END -->
         
                 </div>
             </div>
@@ -100,6 +144,7 @@
                 <p>⏱ 2h 35m</p>
                 <p>⭐ IMDb: 7.7</p>
                 <p>📺 Apply TV</p>
+                <button class="trailer-btn border-0 ">ℹ️Description</button>
               </div>
             </div>
             <p>Kaantha</p>

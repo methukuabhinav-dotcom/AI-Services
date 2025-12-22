@@ -1,68 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- bootstrap link -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Signup</title>
 
-     <!-- bootstrap icon link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- css link -->
+   <link rel="stylesheet" href="index.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
-<body class="d-flex align-items-center justify-content-center min-vh-100">
-    <div class="d-flex justify-content-evenly shadow rounded-4 text-center mx-3 p-4" style="max-width:1100px; width: 800px; background-color: rgba(0, 0, 0, 0.021);">
-        <!-- signup form start-->
-        <div class="signup py-3 w-50 px-3" >
-            <h2 class=" text-warning mb-4">Create Account</h2>
-            <form id="signupForm">
-                <div class="mb-3">
-                    <div class="input-group">
-                        <span class="input-group-text border-end-0 rounded-end-0" id="name-icon"><i class="bi bi-person" aria-hidden="true"></i></span>
-                        <input type="text" id="name" class="form-control border-start-0 rounded-start-0" placeholder="User Name" aria-describedby="name-icon" required />
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="input-group">
-                        <span class="input-group-text border-end-0 rounded-end-0" id="email-icon"><i class="bi bi-envelope" aria-hidden="true"></i></span>
-                        <input type="email" id="email" class="form-control border-start-0 rounded-start-0" placeholder="Email" aria-describedby="email-icon" required />
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="input-group">
-                        <span class="input-group-text border-end-0 rounded-end-0" id="password-icon"><i class="bi bi-lock" aria-hidden="true"></i></span>
-                        <input type="password" id="password" class="form-control border-start-0 rounded-start-0" placeholder="Password" aria-describedby="password-icon" required />
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="input-group">
-                        <span class="input-group-text border-end-0 rounded-end-0" id="password-icon"><i class="bi bi-lock" aria-hidden="true"></i></span>
-                        <input type="password" id="password" class="form-control border-start-0 rounded-start-0" placeholder="Conform Password" aria-describedby="password-icon" required />
-                    </div>
-                </div>
-                <button class="border-0 rounded-3 p-2 bg-warning" type="submit" class="btn btn-primary">Sign Up</button>
-            </form>
-        </div>
-        <!-- signup form end -->
 
-        <!-- login form start -->
-        <div class="login py-3 w-50 px-3">
-            <h2 class=" text-warning mb-2">Login</h2>
-            <p class="text-secondary pb-2">Welcome back User!</p>
-            <form id="loginForm">
-                    <div class="input-group my-4">
-                        <span class="input-group-text border-end-0 rounded-end-0" id="email-icon"><i class="bi bi-envelope" aria-hidden="true"></i></span>
-                        <input type="email" id="email" class="form-control border-start-0 rounded-start-0" placeholder="Email" aria-describedby="email-icon" required />
-                    </div>
-                    <div class="input-group my-4">
-                        <span class="input-group-text border-end-0 rounded-end-0" id="password-icon"><i class="bi bi-lock" aria-hidden="true"></i></span>
-                        <input type="password" id="password" class="form-control border-start-0 rounded-start-0" placeholder="Password" aria-describedby="password-icon" required />
-                    </div>
-                <a class="d-block">Forgot Password</a>
-                <button class="border-0 rounded-3 p-2 bg-warning my-4" type="submit" class="btn btn-primary">Login</button>
-            </form>
+<body class="d-flex align-items-center justify-content-center min-vh-100" style="background-color: #072340;">
+
+<div class="position-relative shadow rounded-4 overflow-hidden bg-light"
+     style="max-width:800px;width:800px;height:430px; background-color: rgba(0, 0, 0, 0.020);">
+
+  <!-- MAIN WRAPPER -->
+  <div class="d-flex h-100">
+
+    <!-- SIGNUP -->
+    <div id="signupBox" class="w-50 p-4 text-center">
+      <h2 class="text-warning mb-4">Create Account</h2>
+
+      <form>
+        <div class="input-group mb-3">
+          <span class="input-group-text"><i class="bi bi-person"></i></span>
+          <input class="form-control" placeholder="User Name">
         </div>
-        <!-- login form end -->
+
+        <div class="input-group mb-3">
+          <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+          <input class="form-control" placeholder="Email">
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text"><i class="bi bi-lock"></i></span>
+          <input class="form-control" placeholder="Password">
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text"><i class="bi bi-lock"></i></span>
+          <input class="form-control" placeholder="Confirm Password">
+        </div>
+
+        <button type="button"
+                class="btn btn-warning px-4"
+                onclick="showLogin()">Sign up</button>
+        <div class="logos d-flex fs-3 justify-content-evenly mt-3">
+          <i class="bi bi-facebook face-logo"></i>
+          <i class="bi bi-google google-logo"></i>
+          <i class="bi bi-github github-logo"></i>
+        </div>
+      </form>
     </div>
+
+    <!-- LOGIN -->
+    <div id="loginBox" class="w-50 p-4 text-center">
+      <h2 class="text-warning mb-2">login</h2>
+      <p class="text-secondary">Welcome back User!</p>
+
+      <form>
+        <div class="input-group my-3">
+          <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+          <input class="form-control" placeholder="Email">
+        </div>
+
+        <div class="input-group my-3">
+          <span class="input-group-text"><i class="bi bi-lock"></i></span>
+          <input class="form-control" placeholder="Password">
+        </div>
+
+        <button type="button"
+                class="btn btn-warning px-4"
+                onclick="showSignup()">login</button>
+        <div class="logos d-flex fs-3 justify-content-evenly mt-3">
+          <i class="bi bi-facebook face-logo"></i>
+          <i class="bi bi-google google-logo"></i>
+          <i class="bi bi-github github-logo"></i>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- BLACK OVERLAY -->
+  <div id="overlay"
+       class="position-absolute top-0 h-100 d-flex flex-column justify-content-center align-items-center text-center bg-dark text-white"
+       style="width:50%;right:0;transition:all .6s ease;">
+
+    <h3 id="overlayTitle">Hello, Friend!</h3>
+    <p id="overlayText1" class="px-4 text-secondary">
+      Enter your personal details and start journey with us!
+    </p>
+    <p id="overlayText2" class="px-4 text-secondary">
+      I already have an account.
+    </p>
+
+    <button id="overlayBtn"
+            class="btn btn-outline-light mx-3"
+            onclick="showSignup()">login</button>
+  </div>
+
+</div>
+
+<script>
+  const overlay = document.getElementById("overlay");
+  const overlayTitle = document.getElementById("overlayTitle");
+  const overlayText1 = document.getElementById("overlayText1");
+  const overlayText2 = document.getElementById("overlayText2");
+  const overlayBtn = document.getElementById("overlayBtn");
+
+  function showSignup() {
+    overlay.style.right = "50%";
+
+    overlayTitle.innerText = "Welcome back!";
+    overlayText1.innerText ="To keep connected with us please login!"
+    overlayText2.innerText ="Don't have an account?"
+    overlayBtn.innerHTML = "Sign up";
+    overlayBtn.onclick = showLogin;
+  }
+
+  function showLogin() {
+    overlay.style.right = "0";
+
+    overlayTitle.innerText = "Hello, Friend!";
+    overlayText1.innerText = "Enter your personal details and start journey with us!";
+    overlayText2.innerText = "I already have an account.";
+    overlayBtn.innerText = "login";
+    overlayBtn.onclick = showSignup;
+  }
+</script>
+
 </body>
 </html>
