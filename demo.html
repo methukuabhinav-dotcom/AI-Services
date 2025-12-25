@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark d-flex justify-content-center align-items-center vh-100">
+
+<div 
+  class="card bg-dark text-white overflow-hidden rounded-4 position-relative"
+  style="width:260px;height:380px;transition:transform 0.3s;"
+  onmouseenter="showDetails(this)"
+  onmouseleave="hideDetails(this)"
+>
+
+  <!-- Image -->
+  <img 
+    src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe"
+    class="w-100 h-100 object-fit-cover"
+  >
+
+  <!-- Black Overlay -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-75 d-none" data-black></div>
+
+  <!-- Hover Content -->
+  <div class="position-absolute bottom-0 start-0 w-100 p-3 d-none" data-content>
+    <small class="text-secondary">Action</small>
+    <h5 class="fw-bold mb-1">The Hunter</h5>
+    <small>🌐 English</small>
+
+    <div class="d-flex gap-2 mt-3">
+      <button class="btn btn-outline-light btn-sm" onclick="openInfo(event, this)">
+        <i class="bi bi-info-circle"></i>
+      </button>
+      <button class="btn btn-danger btn-sm flex-fill">Play Now</button>
+    </div>
+  </div>
+
+  <!-- Sliding Info Panel -->
+  <div 
+    class="position-absolute start-0 w-100 bg-dark p-3 opacity-75"
+    style="bottom:-100%; height:100%; transition:bottom 0.4s;"
+    data-panel
+  >
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h4 class="fw-bold mb-0">The Hunter</h4>
+      <button class="btn btn-sm btn-outline-light" onclick="closeInfo(this)">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <p class="mb-1"><strong>IMDb Rating:</strong> ⭐ 8.2 / 10</p>
+    <p class="mb-1"><strong>Duration:</strong> ⏱️ 2h 18min</p>
+    <p class="mb-2"><strong>OTT Platform:</strong> 🎬 Netflix</p>
+
+    <p class="text-secondary small mt-3">
+      A high-intensity action thriller following a fearless warrior fighting against impossible odds.
+    </p>
+  </div>
+
+</div>
+
+<script>
+function showDetails(card) {
+  card.style.transform = "scale(1.05)";
+  card.querySelector('[data-black]').classList.remove('d-none');
+  card.querySelector('[data-content]').classList.remove('d-none');
+}
+
+function hideDetails(card) {
+  if (card.querySelector('[data-panel]').style.bottom === "0px") return;
+  card.style.transform = "scale(1)";
+  card.querySelector('[data-black]').classList.add('d-none');
+  card.querySelector('[data-content]').classList.add('d-none');
+}
+
+function openInfo(e, btn) {
+  e.stopPropagation();
+  const card = btn.closest('.card');
+  card.querySelector('[data-panel]').style.bottom = "0";
+}
+
+function closeInfo(btn) {
+  const card = btn.closest('.card');
+  card.querySelector('[data-panel]').style.bottom = "-100%";
+}
+</script>
+
+</body>
+</html>

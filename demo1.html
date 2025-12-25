@@ -1,0 +1,509 @@
+<!-- top Action Movies start -->
+    <div class="container">
+      <h3 class="mb-3">Top Action/sci-fi Movies</h3>
+    
+      <div class="position-relative">
+    
+        <!-- Scroll Buttons -->
+        <button class="scroll-btn left rounded-3" onclick="carouselScrollLeft(this)">❮</button>
+        <button class="scroll-btn right rounded-3" onclick="carouselScrollRight(this)">❯</button>
+    
+        <!-- Scroll Container -->
+        <div class="movie-carousel p-4" id="movieCarousel">
+    
+          <!-- Movie Card 1 -->
+          <div>
+          <div class="movie-card card1 bg-dark text-white overflow-hidden rounded-4 position-relative"
+            style="width:190px;height:250px;transition:transform 0.3s;" onmouseenter="showDetails(this)"
+            onmouseleave="hideDetails(this)">
+          
+            <!-- Image -->
+            <img src="assets/F1_(2025_film).png" class="w-100 h-100 object-fit-cover" />
+          
+          
+            <!-- Black Hover Overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50 d-none" data-black></div>
+          
+            <!-- Hover Content -->
+            <div class="position-absolute bottom-0 start-0 w-100 p-2 d-none" data-content>
+              <small class="">Action</small>
+              <h6 class="fw-bold mb-1">The Dark Knight</h6>
+              <small>🌐 English</small>
+          
+              <div class="d-flex gap-2 mt-2">
+                <button class="btn btn-outline-light btn-sm" onclick="openInfo(event,this)">
+                  <i class="bi bi-info-circle"></i>
+                </button>
+                <a href="" class="btn btn-danger btn-sm flex-fill">Play</a>
+              </div>
+            </div>
+          
+            <!-- Slide-up Info Panel -->
+            <div class="position-absolute start-0 w-100 bg-black opacity-75 p-3"
+              style="bottom:-100%; height:100%; transition:bottom 0.4s;" data-panel>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="fw-bold mb-0">The Dark Knight</h5>
+                <button class="btn btn-sm btn-outline-light" onclick="closeInfo(this)">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+          
+              <p class="small mb-1"><strong>IMDb:</strong> ⭐ 9.0 / 10</p>
+              <p class="small mb-1"><strong>Duration:</strong> ⏱️ 2h 18m</p>
+              <p class="small mb-2"><strong>OTT:</strong> 🎬 Hulu</p>
+          
+              <p class="small opacity-75">
+                A high-intensity action thriller following a fearless warrior fighting impossible odds.
+              </p>
+            </div>
+            
+          </div>
+          <p class="text-center fw-bold mt-2">the dark Knight</p>
+          </div>
+
+          <!-- Movie Card 2 -->
+          <div>
+          <div class="movie-card card1 bg-dark text-white overflow-hidden rounded-4 position-relative"
+            style="width:190px;height:250px;transition:transform 0.3s;" onmouseenter="showDetails(this)"
+            onmouseleave="hideDetails(this)">
+          
+            <!-- Image -->
+            <img src="" class="w-100 h-100 object-fit-cover" />
+          
+          
+            <!-- Black Hover Overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50 d-none" data-black></div>
+          
+            <!-- Hover Content -->
+            <div class="position-absolute bottom-0 start-0 w-100 p-2 d-none" data-content>
+              <small class="">Action</small>
+              <h6 class="fw-bold mb-1">The Mountain II</h6>
+              <small>🌐 Turkish</small>
+          
+              <div class="d-flex gap-2 mt-2">
+                <button class="btn btn-outline-light btn-sm" onclick="openInfo(event,this)">
+                  <i class="bi bi-info-circle"></i>
+                </button>
+                <button class="btn btn-danger btn-sm flex-fill">Play</button>
+              </div>
+            </div>
+          
+            <!-- Slide-up Info Panel -->
+            <div class="position-absolute start-0 w-100 bg-black opacity-75 p-3"
+              style="bottom:-100%; height:100%; transition:bottom 0.4s;" data-panel>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="fw-bold mb-0">The Mountain II</h5>
+                <button class="btn btn-sm btn-outline-light" onclick="closeInfo(this)">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+          
+              <p class="small mb-1"><strong>IMDb:</strong> ⭐ 8.9 / 10</p>
+              <p class="small mb-1"><strong>Duration:</strong> ⏱️ 2h 18m</p>
+              <p class="small mb-2"><strong>OTT:</strong> 🎬 Netflix</p>
+          
+              <p class="small opacity-75">
+                A high-intensity action thriller following a fearless warrior fighting impossible odds.
+              </p>
+            </div>
+          </div>
+          <p class="text-center fw-bold mt-2">The Mountain II</p>
+          </div>
+    
+          <!-- Movie Card 3 -->
+          <div>
+          <div class="movie-card card1 bg-dark text-white overflow-hidden rounded-4 position-relative"
+            style="width:190px;height:250px;transition:transform 0.3s;" onmouseenter="showDetails(this)"
+            onmouseleave="hideDetails(this)">
+          
+            <!-- Image -->
+            <img src="assets/F1_(2025_film).png" class="w-100 h-100 object-fit-cover" />
+          
+          
+            <!-- Black Hover Overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50 d-none" data-black></div>
+          
+            <!-- Hover Content -->
+            <div class="position-absolute bottom-0 start-0 w-100 p-2 d-none" data-content>
+              <small class=""><Action>small>
+              <h6 class="fw-bold mb-1">Inception</h6>
+              <small>🌐 English</small>
+          
+              <div class="d-flex gap-2 mt-2">
+                <button class="btn btn-outline-light btn-sm" onclick="openInfo(event,this)">
+                  <i class="bi bi-info-circle"></i>
+                </button>
+                <button class="btn btn-danger btn-sm flex-fill">Play</button>
+              </div>
+            </div>
+          
+            <!-- Slide-up Info Panel -->
+            <div class="position-absolute start-0 w-100 bg-black opacity-75 p-3"
+              style="bottom:-100%; height:100%; transition:bottom 0.4s;" data-panel>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="fw-bold mb-0">Inception</h5>
+                <button class="btn btn-sm btn-outline-light" onclick="closeInfo(this)">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+          
+              <p class="small mb-1"><strong>IMDb:</strong> ⭐ 8.8 / 10</p>
+              <p class="small mb-1"><strong>Duration:</strong> ⏱️ 2h 18m</p>
+              <p class="small mb-2"><strong>OTT:</strong> 🎬 Netflix</p>
+          
+              <p class="small opacity-75">
+                A high-intensity action thriller following a fearless warrior fighting impossible odds.
+              </p>
+            </div>
+          </div>
+          <p class="text-center fw-bold mt-2">nception</p>
+          </div>
+    
+          <!-- Movie Card 4 -->
+          <div>
+          <div class="movie-card card1 bg-dark text-white overflow-hidden rounded-4 position-relative"
+            style="width:190px;height:250px;transition:transform 0.3s;" onmouseenter="showDetails(this)"
+            onmouseleave="hideDetails(this)">
+          
+            <!-- Image -->
+            <img src="" class="w-100 h-100 object-fit-cover" />
+          
+          
+            <!-- Black Hover Overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50 d-none" data-black></div>
+          
+            <!-- Hover Content -->
+            <div class="position-absolute bottom-0 start-0 w-100 p-2 d-none" data-content>
+              <small class="">Action</small>
+              <h6 class="fw-bold mb-1">Star wars:the empire strikes back</h6>
+              <small>🌐 English</small>
+          
+              <div class="d-flex gap-2 mt-2">
+                <button class="btn btn-outline-light btn-sm" onclick="openInfo(event,this)">
+                  <i class="bi bi-info-circle"></i>
+                </button>
+                <button class="btn btn-danger btn-sm flex-fill">Play</button>
+              </div>
+            </div>
+          
+            <!-- Slide-up Info Panel -->
+            <div class="position-absolute start-0 w-100 bg-black opacity-75 p-3"
+              style="bottom:-100%; height:100%; transition:bottom 0.4s;" data-panel>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="fw-bold mb-0">star wars: the empire strikes back</h5>
+                <button class="btn btn-sm btn-outline-light" onclick="closeInfo(this)">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+          
+              <p class="small mb-1"><strong>IMDb:</strong> ⭐ 8.7 / 10</p>
+              <p class="small mb-1"><strong>Duration:</strong> ⏱️ 2h 18m</p>
+              <p class="small mb-2"><strong>OTT:</strong> 🎬 Disney+</p>
+          
+              <p class="small opacity-75">
+                A high-intensity action thriller following a fearless warrior fighting impossible odds.
+              </p>
+            </div>
+          </div>
+          <p class="text-center fw-bold mt-2">star wars:the empire strikes empire strikes back</p>
+          </div>
+    
+          <!-- Movie Card 5 -->
+          <div>
+          <div class="movie-card card1 bg-dark text-white overflow-hidden rounded-4 position-relative"
+            style="width:190px;height:250px;transition:transform 0.3s;" onmouseenter="showDetails(this)"
+            onmouseleave="hideDetails(this)">
+          
+            <!-- Image -->
+            <img src="" class="w-100 h-100 object-fit-cover" />
+          
+          
+            <!-- Black Hover Overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50 d-none" data-black></div>
+          
+            <!-- Hover Content -->
+            <div class="position-absolute bottom-0 start-0 w-100 p-2 d-none" data-content>
+              <small class="">Action</small>
+              <h6 class="fw-bold mb-1">star wars: a new hope</h6>
+              <small>🌐 English</small>
+          
+              <div class="d-flex gap-2 mt-2">
+                <button class="btn btn-outline-light btn-sm" onclick="openInfo(event,this)">
+                  <i class="bi bi-info-circle"></i>
+                </button>
+                <button class="btn btn-danger btn-sm flex-fill">Play</button>
+              </div>
+            </div>
+          
+            <!-- Slide-up Info Panel -->
+            <div class="position-absolute start-0 w-100 bg-black opacity-75 p-3"
+              style="bottom:-100%; height:100%; transition:bottom 0.4s;" data-panel>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="fw-bold mb-0">star wars:a new hope</h5>
+                <button class="btn btn-sm btn-outline-light" onclick="closeInfo(this)">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+          
+              <p class="small mb-1"><strong>IMDb:</strong> ⭐ 8.6 / 10</p>
+              <p class="small mb-1"><strong>Duration:</strong> ⏱️ 2h 18m</p>
+              <p class="small mb-2"><strong>OTT:</strong> 🎬 Disney+</p>
+          
+              <p class="small opacity-75">
+                A high-intensity action thriller following a fearless warrior fighting impossible odds.
+              </p>
+            </div>
+          </div>
+          <p class="text-center fw-bold mt-2">Star wars: a new hope</p>
+          </div>
+    
+          <!-- Movie Card 6 -->
+           <div>
+          <div class="movie-card card1 bg-dark text-white overflow-hidden rounded-4 position-relative"
+            style="width:190px;height:250px;transition:transform 0.3s;" onmouseenter="showDetails(this)"
+            onmouseleave="hideDetails(this)">
+          
+            <!-- Image -->
+            <img src="" class="w-100 h-100 object-fit-cover" />
+          
+          
+            <!-- Black Hover Overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50 d-none" data-black></div>
+          
+            <!-- Hover Content -->
+            <div class="position-absolute bottom-0 start-0 w-100 p-2 d-none" data-content>
+              <small class="">Action</small>
+              <h6 class="fw-bold mb-1">Dune:part two</h6>
+              <small>🌐 English</small>
+          
+              <div class="d-flex gap-2 mt-2">
+                <button class="btn btn-outline-light btn-sm" onclick="openInfo(event,this)">
+                  <i class="bi bi-info-circle"></i>
+                </button>
+                <button class="btn btn-danger btn-sm flex-fill">Play</button>
+              </div>
+            </div>
+          
+            <!-- Slide-up Info Panel -->
+            <div class="position-absolute start-0 w-100 bg-black opacity-75 p-3"
+              style="bottom:-100%; height:100%; transition:bottom 0.4s;" data-panel>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="fw-bold mb-0">Dune:part two</h5>
+                <button class="btn btn-sm btn-outline-light" onclick="closeInfo(this)">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+          
+              <p class="small mb-1"><strong>IMDb:</strong> ⭐ 8.6 / 10</p>
+              <p class="small mb-1"><strong>Duration:</strong> ⏱️ 2h 18m</p>
+              <p class="small mb-2"><strong>OTT:</strong> 🎬 prime video</p>
+          
+              <p class="small opacity-75">
+                A high-intensity action thriller following a fearless warrior fighting impossible odds.
+              </p>
+            </div>
+          </div>
+          <p class="text-center fw-bold mt-2">f1</p>
+          </div>
+
+          <!-- Movie Card 7 -->
+           <div>
+          <div class="movie-card card1 bg-dark text-white overflow-hidden rounded-4 position-relative"
+            style="width:190px;height:250px;transition:transform 0.3s;" onmouseenter="showDetails(this)"
+            onmouseleave="hideDetails(this)">
+          
+            <!-- Image -->
+            <img src="" class="w-100 h-100 object-fit-cover" />
+          
+          
+            <!-- Black Hover Overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50 d-none" data-black></div>
+          
+            <!-- Hover Content -->
+            <div class="position-absolute bottom-0 start-0 w-100 p-2 d-none" data-content>
+              <small class="">Action</small>
+              <h6 class="fw-bold mb-1">Spider man across the spider-verse</h6>
+              <small>🌐 English</small>
+          
+              <div class="d-flex gap-2 mt-2">
+                <button class="btn btn-outline-light btn-sm" onclick="openInfo(event,this)">
+                  <i class="bi bi-info-circle"></i>
+                </button>
+                <button class="btn btn-danger btn-sm flex-fill">Play</button>
+              </div>
+            </div>
+          
+            <!-- Slide-up Info Panel -->
+            <div class="position-absolute start-0 w-100 bg-black opacity-75 p-3"
+              style="bottom:-100%; height:100%; transition:bottom 0.4s;" data-panel>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="fw-bold mb-0">Spider man across the spider verse</h5>
+                <button class="btn btn-sm btn-outline-light" onclick="closeInfo(this)">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+          
+              <p class="small mb-1"><strong>IMDb:</strong> ⭐ 8.6 / 10</p>
+              <p class="small mb-1"><strong>Duration:</strong> ⏱️ 2h 18m</p>
+              <p class="small mb-2"><strong>OTT:</strong> 🎬 Netflix</p>
+          
+              <p class="small opacity-75">
+                A high-intensity action thriller following a fearless warrior fighting impossible odds.
+              </p>
+            </div>
+          </div>
+          <p class="text-center fw-bold mt-2">f1</p>
+          </div>
+
+          <!-- Movie Card 8 -->
+          <div>
+          <div class="movie-card card1 bg-dark text-white overflow-hidden rounded-4 position-relative"
+            style="width:190px;height:250px;transition:transform 0.3s;" onmouseenter="showDetails(this)"
+            onmouseleave="hideDetails(this)">
+          
+            <!-- Image -->
+            <img src="" class="w-100 h-100 object-fit-cover" />
+          
+          
+            <!-- Black Hover Overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50 d-none" data-black></div>
+          
+            <!-- Hover Content -->
+            <div class="position-absolute bottom-0 start-0 w-100 p-2 d-none" data-content>
+              <small class="">Action</small>
+              <h6 class="fw-bold mb-1">Run baby run</h6>
+              <small>🌐 Telugu</small>
+          
+              <div class="d-flex gap-2 mt-2">
+                <button class="btn btn-outline-light btn-sm" onclick="openInfo(event,this)">
+                  <i class="bi bi-info-circle"></i>
+                </button>
+                <button class="btn btn-danger btn-sm flex-fill">Play</button>
+              </div>
+            </div>
+          
+            <!-- Slide-up Info Panel -->
+            <div class="position-absolute start-0 w-100 bg-black opacity-75 p-3"
+              style="bottom:-100%; height:100%; transition:bottom 0.4s;" data-panel>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="fw-bold mb-0">Run baby run</h5>
+                <button class="btn btn-sm btn-outline-light" onclick="closeInfo(this)">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+          
+              <p class="small mb-1"><strong>IMDb:</strong> ⭐ 8.6 / 10</p>
+              <p class="small mb-1"><strong>Duration:</strong> ⏱️ 2h 18m</p>
+              <p class="small mb-2"><strong>OTT:</strong> 🎬 Netflix</p>
+          
+              <p class="small opacity-75">
+                A high-intensity action thriller following a fearless warrior fighting impossible odds.
+              </p>
+            </div>
+          </div>
+          <p class="text-center fw-bold mt-2">Run baby run</p>
+          </div>
+
+          <!-- Movie Card 9 -->
+           <div>
+          <div class="movie-card card1 bg-dark text-white overflow-hidden rounded-4 position-relative"
+            style="width:190px;height:250px;transition:transform 0.3s;" onmouseenter="showDetails(this)"
+            onmouseleave="hideDetails(this)">
+          
+            <!-- Image -->
+            <img src="" class="w-100 h-100 object-fit-cover" />
+          
+          
+            <!-- Black Hover Overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50 d-none" data-black></div>
+          
+            <!-- Hover Content -->
+            <div class="position-absolute bottom-0 start-0 w-100 p-2 d-none" data-content>
+              <small class="">Action</small>
+              <h6 class="fw-bold mb-1">RWBY: volume 3</h6>
+              <small>🌐 Unknown</small>
+          
+              <div class="d-flex gap-2 mt-2">
+                <button class="btn btn-outline-light btn-sm" onclick="openInfo(event,this)">
+                  <i class="bi bi-info-circle"></i>
+                </button>
+                <button class="btn btn-danger btn-sm flex-fill">Play</button>
+              </div>
+            </div>
+          
+            <!-- Slide-up Info Panel -->
+            <div class="position-absolute start-0 w-100 bg-black opacity-75 p-3"
+              style="bottom:-100%; height:100%; transition:bottom 0.4s;" data-panel>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="fw-bold mb-0">The Hunter</h5>
+                <button class="btn btn-sm btn-outline-light" onclick="closeInfo(this)">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+          
+              <p class="small mb-1"><strong>IMDb:</strong> ⭐ 8.7 / 10</p>
+              <p class="small mb-1"><strong>Duration:</strong> ⏱️ 2h 18m</p>
+              <p class="small mb-2"><strong>OTT:</strong> 🎬 Netflix</p>
+          
+              <p class="small opacity-75">
+                A high-intensity action thriller following a fearless warrior fighting impossible odds.
+              </p>
+            </div>
+          </div>
+          <p class="text-center fw-bold mt-2">RWBY:volume 3</p>
+          </div>
+    
+          <!-- Movie Card 10 -->
+          <div> 
+          <div class="movie-card card1 bg-dark text-white overflow-hidden rounded-4 position-relative"
+            style="width:190px;height:250px;transition:transform 0.3s;" onmouseenter="showDetails(this)"
+            onmouseleave="hideDetails(this)">
+          
+            <!-- Image -->
+            <img src="" class="w-100 h-100 object-fit-cover" />
+          
+          
+            <!-- Black Hover Overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50 d-none" data-black></div>
+          
+            <!-- Hover Content -->
+            <div class="position-absolute bottom-0 start-0 w-100 p-2 d-none" data-content>
+              <small class="">Action</small>
+              <h6 class="fw-bold mb-1">The Matrix</h6>
+              <small>🌐 English</small>
+          
+              <div class="d-flex gap-2 mt-2">
+                <button class="btn btn-outline-light btn-sm" onclick="openInfo(event,this)">
+                  <i class="bi bi-info-circle"></i>
+                </button>
+                <button class="btn btn-danger btn-sm flex-fill">Play</button>
+              </div>
+            </div>
+          
+            <!-- Slide-up Info Panel -->
+            <div class="position-absolute start-0 w-100 bg-black opacity-75 p-3"
+              style="bottom:-100%; height:100%; transition:bottom 0.4s;" data-panel>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="fw-bold mb-0">The Matrix</h5>
+                <button class="btn btn-sm btn-outline-light" onclick="closeInfo(this)">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+          
+              <p class="small mb-1"><strong>IMDb:</strong> ⭐ 8.7 / 10</p>
+              <p class="small mb-1"><strong>Duration:</strong> ⏱️ 2h 18m</p>
+              <p class="small mb-2"><strong>OTT:</strong> 🎬 Netflix</p>
+          
+              <p class="small opacity-75">
+                A high-intensity action thriller following a fearless warrior fighting impossible odds.
+              </p>
+            </div>
+          </div>
+          <p class="text-center fw-bold mt-2">The matrix</p>
+          </div>
+    
+          <!-- Add more cards -->
+        </div>
+      </div>
+    </div>
+   <!-- top Action Movies end -->

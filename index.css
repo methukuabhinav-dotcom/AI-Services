@@ -32,36 +32,35 @@
 }
 
 .movie-card img {
-  width: 100%;
+  /* width: 100%; */
   height: 220px;
   object-fit: cover;
   border-radius: 10px;
+  transition: transform .25s ease, box-shadow .25s ease;
 }
 
-/* Hover overlay (hidden by default) */
+/* Bottom info panel on hover (hidden by default) */
 .hover-info{
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 220px; /* match .movie-card img height */
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 8px;
-  background: rgba(56, 52, 52, 0.637);
+  gap: 12px;
+  background: rgba(0,0,0,0.78);
   color: #fff;
   padding: 12px;
   border-radius: 10px;
   opacity: 0;
-  transition: all .2s ease-in-out;
+  transform: translateY(8px);
+  transition: opacity .18s ease, transform .18s ease;
   pointer-events: none;
-  /* z-index: 5; */
 }
 
 .movie-card:hover .hover-info{
   opacity: 1;
+  transform: translateY(0);
   pointer-events: auto;
 }
 
@@ -107,7 +106,7 @@
 
 
 .movie-card{ transition: all .2s linear; }
-.movie-card:hover img { transform: scale(1.12); }
+.movie-card:hover img { transform: translateY(-8px); box-shadow: 0 12px 30px rgba(0,0,0,0.45); }
 
 /* center navbar items on large screens */
 @media (min-width: 992px) {
@@ -176,3 +175,20 @@
     z-index: 1200;
   }
 }
+
+/* Ensure custom .card inside the movie carousel displays like .movie-card */
+.movie-carousel .card {
+  min-width: 220px;
+  flex: 0 0 auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform .25s ease, box-shadow .25s ease;
+  z-index: 2;
+}
+.movie-carousel .card:hover { z-index: 8; }
+.movie-carousel .card img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0; }
+
+/* Ensure slide-up panel sits above image but inside card */
+.movie-carousel .card [data-panel] { z-index: 9; }

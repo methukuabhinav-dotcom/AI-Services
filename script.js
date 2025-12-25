@@ -24,3 +24,26 @@
           if (e.key === 'ArrowRight') active.scrollBy({ left: 200, behavior: 'smooth' });
         }
       });
+
+
+function showDetails(card1) {
+  card1.style.transform = "scale(1.05)";
+  card1.querySelector('[data-black]').classList.remove('d-none');
+  card1.querySelector('[data-content]').classList.remove('d-none');
+}
+
+function hideDetails(card1) {
+  if (card1.querySelector('[data-panel]').style.bottom === "0px") return;
+  card1.style.transform = "scale(1)";
+  card1.querySelector('[data-black]').classList.add('d-none');
+  card1.querySelector('[data-content]').classList.add('d-none');
+}
+
+function openInfo(e, btn) {
+  e.stopPropagation();
+  btn.closest('.card1').querySelector('[data-panel]').style.bottom = "0px";
+}
+
+function closeInfo(btn) {
+  btn.closest('.card1').querySelector('[data-panel]').style.bottom = "-100%";
+}
